@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubernetes-demo
+  labels:
+    app: kubernetes-demo-pod
+    environment: develop
+spec:
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 5000
+      targetPort: 5000
+      nodePort: 32700
+  selector:
+    app: kubernetes-demo-pod

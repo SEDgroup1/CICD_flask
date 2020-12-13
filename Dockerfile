@@ -15,4 +15,6 @@ RUN pip install -r /requirements.txt
 
 #RUN ["mkdir", "data"] # 創建container的同時馬上創建一個data資料夾
 
-#CMD ["python3", "hello_flask.py"]
+EXPOSE 5000
+
+CMD ["python3", "hello_flask.py"]

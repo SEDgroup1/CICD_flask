@@ -9,4 +9,4 @@ spec:
    - name: kubernetes-demo-container
      image: zxp791228/k8s-flask-demo
      ports:
-       - containerPort: 3000
+       - containerPort: 5000 # 要跟flask裡面指定的port一致

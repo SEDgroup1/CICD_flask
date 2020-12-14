@@ -15,4 +15,5 @@ if __name__ == '__main__':
 
     # docker run  f-p 80:5000 flask_img
     # kubectl port-forward kubernetes-demo-pod 2000:5000
+    
     # http://0.0.0.0:2000/

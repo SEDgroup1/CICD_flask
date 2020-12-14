@@ -3,14 +3,13 @@ kind: Service
 metadata:
   name: kubernetes-demo
   labels:
-    app: kubernetes-demo-pod
-    environment: develop
+    app: demoApp
 spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 5000
-      nodePort: 32700
+      port: 5000 #跟container裡面的port相同
+      targetPort: 5000 #要跟container裡面的port相同
+      nodePort: 32700 #指定要連到本地端的port
   selector:
-    app: kubernetes-demo-pod
+    app: demoApp

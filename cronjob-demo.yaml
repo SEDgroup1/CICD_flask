@@ -2,6 +2,8 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: hello
+  labels:
+    app: demoApp
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:
@@ -9,10 +11,17 @@ spec:
       template:
         spec:
           containers:
-          - name: hello
-            image: apline
-            args:
-            - /bin/sh
-            - -c
-            - echo "Hi, current time is $(date)"
+            - name: kubernetes-demo-container
+              image: zxp791228/k8s-flask-demo
+              ports:
+                - containerPort: 5000 # 要跟flask裡面指定的port一致
           restartPolicy: OnFailure
+        # spec:
+        #   containers:
+        #   - name: hello
+        #     image: apline
+        #     args:
+        #     - /bin/sh
+        #     - -c
+        #     - echo "Hi, current time is $(date)"
+        #   restartPolicy: OnFailure

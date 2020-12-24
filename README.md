@@ -11,6 +11,6 @@
 
 ## 流程
 1. 在一台機器上安裝 jenkins (這邊範例使用在本機macOS安裝)
-2. 設定 jenkins 連接 repository，當偵測到 repository 有改變就會自動 `git pull` 下來到 jenkins 自己的工作目錄(https://blog.csdn.net/ZZY1078689276/article/details/77485615)
+2. 設定 jenkins 連接 repository，當偵測到 repository 有改變就會自動 `git pull` 下來到 jenkins 自己的工作目錄(預設在 ～/jenkins)
 3. 設定拉下來後要 `build 建置` 時執行的動作(EX. shell script, docker build images,...)
 4. 串接 slack notification API，通知建置成功

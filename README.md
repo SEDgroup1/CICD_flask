@@ -6,7 +6,7 @@
   * [console or Docker](https://medium.com/@NorthBei/ci-1-在各平台上安裝jenkins-ea0f19cc0881)
   
 2. minikube
-  * macOS 本地端：
+  * macOS 本地端：<br>
   `$ brew install minikube`
 
 ## 流程

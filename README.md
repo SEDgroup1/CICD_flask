@@ -17,7 +17,7 @@
 1. 在一台機器上安裝 jenkins (這邊範例使用在本機macOS安裝)
     * macOS jenkins 安裝與配置：https://www.jianshu.com/p/9dc3b45fbbec
     * 啟動 jenkins: `$ jenkins -httpPort=8080`
-    * `localhost:8080`
+    * 啟動後瀏覽器輸入網址: `localhost:8080`
 
 2. 設定 jenkins 連接 repository，當偵測到 repository 有改變就會自動 `git pull` 下來到 jenkins 自己的工作目錄(預設會存在路徑： `～/.jenkins/workspace`)
     * https://www.youtube.com/watch?v=MmT5lYD5cy0

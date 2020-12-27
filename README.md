@@ -23,6 +23,7 @@
     * https://www.youtube.com/watch?v=MmT5lYD5cy0
 
 3. 設定拉下來後要 `build 建置` 時執行的動作(EX. shell script, docker build images,...等等)
+    * https://github.com/twtrubiks/docker-jenkins-django-tutorial
 
 4. 串接 slack notification API，通知建置成功
     * https://www.youtube.com/watch?v=jmVRb81KpUk
